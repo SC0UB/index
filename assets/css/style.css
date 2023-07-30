@@ -5,9 +5,9 @@
    * colors
    */
 
-  --safety-orange: 		rgb(231, 68, 231);
-  --lavender-gray: hsl(266, 100%, 17%);
-  --persian-rose: hsl(328, 100%, 59%);
+  --safety-orange: 		rgb(0, 0, 0);
+  --lavender-gray:rgb(0, 0, 0);
+  --persian-rose: rgb(0, 0, 0);
   --red-crayola: hsl(341, 100%, 49%);
   --eerie-black: hsl(240, 6%, 10%);
   --light-gray: hsl(0, 0%, 80%);
