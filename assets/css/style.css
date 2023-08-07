@@ -1,4 +1,88 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root {
 
   /**
@@ -6,7 +90,7 @@
    */
 
   --safety-orange: 		rgb(0, 0, 0);
-  --lavender-gray:rgb(0, 0, 0);
+  --lavender-gray: rgb(0, 0, 0);
   --persian-rose: rgb(0, 0, 0);
   --red-crayola: hsl(341, 100%, 49%);
   --eerie-black: hsl(240, 6%, 10%);
@@ -1159,4 +1243,29 @@ textarea.input-field {
 
   .contact-card .card-icon { padding: 15px; }
 
+}
+
+
+.close {
+  background: rgb(0, 0, 0);
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.close:after {
+  content: '';
+  height: 60px;
+  border-left: 2px solid #ff0000;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 28px;
+}
+
+.close:before {
+  content: '';
+  height: 60px;
+  border-left: 2px solid #ff0000;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 28px;
 }
