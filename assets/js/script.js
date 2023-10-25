@@ -63,33 +63,6 @@ var userLanguage = navigator.language || navigator.userLanguage;
 // Define your content in both English and French.
 var content = {
     en: {
-        welcomeMessage: "Welcome to Our Website",
-        description: "This is a sample website."
-    },
-    fr: {
-        welcomeMessage: "Bienvenue sur notre site",
-        description: "Ceci est un site web de démonstration."
-    }
-};
-
-// Function to update the content based on the user's language.
-function updateContent(language) {
-    document.getElementById("welcome-message").textContent = content[language].welcomeMessage;
-    document.getElementById("description").textContent = content[language].description;
-}
-
-// Check the user's language preference and update the content.
-if (userLanguage.startsWith("fr")) {
-    updateContent("fr");
-} else {
-    updateContent("en");
-}
-
-}
-
-
-var content = {
-    en: {
         contactus: "Contact Us",
         startnow: "Start Now !",
       title: "MediaTAG Copywriting Agency",
@@ -144,4 +117,22 @@ var content = {
       contact2: "N'hésitez pas à nous contacter si vous avez des questions, notre équipe sera informée et vous recevrez une réponse dans un délai de 1 à 2 jours ouvrables..",
     }
 };
+
+// Function to update the content based on the user's language.
+function updateContent(language) {
+    document.getElementById("contactus").textContent = content[language].contactus;
+    document.getElementById("description").textContent = content[language].description;
+}
+
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
+}
+
+}
+
+
+
 
