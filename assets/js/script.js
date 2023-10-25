@@ -56,3 +56,37 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+if ("geolocation" in navigator) {
+  navigator.geolocation.getCurrentPosition(function (position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    
+    // Use latitude and longitude to determine the user's location (e.g., using a geocoding service).
+    
+    // Check if the user is in France.
+    if (userIsInFrance(latitude, longitude)) {
+      // Change the language to French.
+      changeLanguageToFrench();
+    }
+  });
+}
+
+
+function changeLanguageToFrench() {
+  // Set a language preference variable (e.g., in localStorage).
+  localStorage.setItem("language", "fr");
+
+  // Update the content of your website to display in French.
+  // You can use JavaScript to update text content dynamically, or you can load a different HTML/CSS file for the French version.
+  
+  // Example: change text content dynamically
+  document.getElementById("welcome-message").innerText = "Bienvenue sur notre site";
+}
+
+
+// Check if the user's language preference is saved and load accordingly.
+var userLanguage = localStorage.getItem("language");
+if (userLanguage === "fr") {
+  changeLanguageToFrench();
+}
