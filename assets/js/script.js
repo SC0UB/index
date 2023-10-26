@@ -123,6 +123,8 @@ var content = {
 
 // Function to update the content based on the user's language.
 function updateContent(language) {
+  document.getElementById("herotext").textContent = content[language].herotext;
+  document.getElementById("mission").textContent = content[language].mission;
     document.getElementById("contactus").textContent = content[language].contactus;
     document.getElementById("startnow").textContent = content[language].startnow;
   document.getElementById("title").textContent = content[language].title;
