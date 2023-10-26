@@ -1,5 +1,13 @@
 'use strict';
 
+
+
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
+}
 /**
  * add event on element
  */
@@ -121,15 +129,31 @@ var content = {
 // Function to update the content based on the user's language.
 function updateContent(language) {
     document.getElementById("contactus").textContent = content[language].contactus;
-    document.getElementById("description").textContent = content[language].description;
+    document.getElementById("startnow").textContent = content[language].startnow;
+  document.getElementById("title").textContent = content[language].title;
+  document.getElementById("herotext").textContent = content[language].herotext;
+  document.getElementById("howtomakemoney").textContent = content[language].howtomakemoney
+  document.getElementById("schedule").textContent = content[language].schedule;
+  document.getElementById("offer").textContent = content[language].offer;
+  document.getElementById("whatisit").textContent = content[language].whatisit;
+  document.getElementById("text1").textContent = content[language].text1;
+  document.getElementById("text2").textContent = content[language].text2;
+  document.getElementById("focus").textContent = content[language].focus;
+  document.getElementById("whichmeans").textContent = content[language].whichmeans;
+  document.getElementById("salesfunnels").textContent = content[language].salesfunnels;
+  document.getElementById("adcopy").textContent = content[language].adcopy;
+  document.getElementById("salespages").textContent = content[language].salespages;
+  document.getElementById("videoscripts").textContent = content[language].videoscripts;
+  document.getElementById("smma").textContent = content[language].smma;
+  document.getElementById("inst").textContent = content[language].inst;
+  document.getElementById("marketing").textContent = content[language].marketing;
+  document.getElementById("next").textContent = content[language].next;
+  document.getElementById("start").textContent = content[language].start;
+  document.getElementById("contact").textContent = content[language].contact;
+  document.getElementById("contact2").textContent = content[language].contact2;
 }
 
-// Check the user's language preference and update the content.
-if (userLanguage.startsWith("fr")) {
-    updateContent("fr");
-} else {
-    updateContent("en");
-}
+
 
 }
 
