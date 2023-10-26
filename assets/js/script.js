@@ -123,6 +123,7 @@ var content = {
 
 // Function to update the content based on the user's language.
 function updateContent(language) {
+  document.getElementById("mission").textContent = content[language].mission;
     document.getElementById("contactus").textContent = content[language].contactus;
     document.getElementById("startnow").textContent = content[language].startnow;
   document.getElementById("title").textContent = content[language].title;
@@ -146,7 +147,6 @@ function updateContent(language) {
   document.getElementById("start").textContent = content[language].start;
   document.getElementById("contact").textContent = content[language].contact;
   document.getElementById("contact2").textContent = content[language].contact2;
-  document.getElementById("mission").textContent = content[language].mission;
   document.getElementById("contact1").textContent = content[language].contact1;
 }
 
