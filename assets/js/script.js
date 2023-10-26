@@ -146,6 +146,8 @@ function updateContent(language) {
   document.getElementById("start").textContent = content[language].start;
   document.getElementById("contact").textContent = content[language].contact;
   document.getElementById("contact2").textContent = content[language].contact2;
+  document.getElementById("mission").textContent = content[language].mission;
+  document.getElementById("contact1").textContent = content[language].contact1;
 }
 
 // Check the user's language preference and update the content.
