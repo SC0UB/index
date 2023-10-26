@@ -66,13 +66,12 @@ var userLanguage = navigator.language || navigator.userLanguage;
 // Define your content in both English and French.
 var content = {
     en: {
-      ready: "Are You Ready? Let's get to Work!",
         contactus: "Contact Us",
         startnow: "Start Now !",
       title: "MediaTAG Copywriting Agency",
       mission: "Scaling your business is our mission.",
       herotext: " MediaTAG is a copywriting agency that helps all kinds of businesses to boost their revenue and advertising ROI.",
-      howtomakemoney: "How do you want to make <strong>money online without <strong>COMMUNICATION, you need to transmit a message, and transmit it in a way to make people actually buy from you, and that's a skill that we have.",
+      howtomakemoney: "How do you want to make <strong>money </strong> online without <strong>COMMUNICATION</strong>, you need to transmit a message, and transmit it in a way to make people actually <strong>buy</strong> from you, and that's a <strong>skill</strong> that we have.",
       schedule: "Schedule a FREE call",
       offer: "What we offer",
       whatisit: "But what is it, and how can it help you ?",
@@ -94,13 +93,12 @@ var content = {
       contact2: "Feel free to contact us if you have any question, our team will be notified and you'll get a response by 1-2 business days.",
     },
     fr: {
-      ready= "Êtes-vous prêts ? Mettons nous au travail !",
         contactus: "Contactez Nous",
         startnow: "Commencer Maintenant !",
       title: "MediaTAG: Agence de Copywriting ",
       mission: "Vous faire gagner plus d'argent est notre mission.",
       herotext: " MediaTAG est une agence de copywriting qui peut VOUS aider à augmenter votre chiffre d'affaire et votre RSI en marketing.",
-      howtomakemoney: "Comment voulez vous faire de l'argent en ligne sans une bonne COMMUNICATION, vous devez transmettre un message, une bonne image de vous, et faire cela de manière à faire acheter, et c'est un savoir faire que nous avons.",
+      howtomakemoney: "Comment voulez vous faire de <strong>l'argent</strong> en ligne sans une bonne <strong>COMMUNICATION</strong>, vous devez transmettre un message, une bonne image de vous, et faire cela de manière à faire <strong>acheter</strong>, et c'est un <strong>savoir faire</strong> que nous avons.",
       schedule: "APPEL GRATUIT",
       offer: "Ce qu'on offre",
       whatisit: "Mais qu'est ce que c'est, et comment ca peut vous aider ?",
@@ -125,8 +123,6 @@ var content = {
 
 // Function to update the content based on the user's language.
 function updateContent(language) {
-  document.getElementById("ready").textContent = content[language].ready;
-  document.getElementById("mission").textContent = content[language].mission;
     document.getElementById("contactus").textContent = content[language].contactus;
     document.getElementById("startnow").textContent = content[language].startnow;
   document.getElementById("title").textContent = content[language].title;
@@ -150,7 +146,6 @@ function updateContent(language) {
   document.getElementById("start").textContent = content[language].start;
   document.getElementById("contact").textContent = content[language].contact;
   document.getElementById("contact2").textContent = content[language].contact2;
-  document.getElementById("contact1").textContent = content[language].contact1;
 }
 
 // Check the user's language preference and update the content.
@@ -159,8 +154,3 @@ if (userLanguage.startsWith("fr")) {
 } else {
     updateContent("en");
 }
-
-
-
-
-
