@@ -2,12 +2,7 @@
 
 
 
-// Check the user's language preference and update the content.
-if (userLanguage.startsWith("fr")) {
-    updateContent("fr");
-} else {
-    updateContent("en");
-}
+
 /**
  * add event on element
  */
@@ -153,9 +148,13 @@ function updateContent(language) {
   document.getElementById("contact2").textContent = content[language].contact2;
 }
 
-
-
+// Check the user's language preference and update the content.
+if (userLanguage.startsWith("fr")) {
+    updateContent("fr");
+} else {
+    updateContent("en");
 }
+
 
 
 
