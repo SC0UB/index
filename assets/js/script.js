@@ -98,7 +98,7 @@ var content = {
       title: "MediaTAG: Agence de Copywriting ",
       mission: "Vous faire gagner plus d'argent est notre mission.",
       herotext: " MediaTAG est une agence de copywriting qui peut VOUS aider à augmenter votre chiffre d'affaire et votre RSI en marketing.",
-      howtomakemoney: "Comment voulez vous faire de l'argent en ligne sans une bonne COMMUNICATION, vous devez transmettre un message, une bonne image de vous, et faire cela de manière à faire <strong>acheter</strong>, et c'est un savoir faire que nous avons.",
+      howtomakemoney: "Comment voulez vous faire de l'argent en ligne sans une bonne COMMUNICATION, vous devez transmettre un message, une bonne image de vous, et faire cela de manière à faire acheter, et c'est un savoir faire que nous avons.",
       schedule: "APPEL GRATUIT",
       offer: "Ce qu'on offre",
       whatisit: "Mais qu'est ce que c'est, et comment ca peut vous aider ?",
