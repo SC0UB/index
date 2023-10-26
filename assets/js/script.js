@@ -66,6 +66,7 @@ var userLanguage = navigator.language || navigator.userLanguage;
 // Define your content in both English and French.
 var content = {
     en: {
+      ready: "Are You Ready? Let's get to Work!",
         contactus: "Contact Us",
         startnow: "Start Now !",
       title: "MediaTAG Copywriting Agency",
@@ -93,6 +94,7 @@ var content = {
       contact2: "Feel free to contact us if you have any question, our team will be notified and you'll get a response by 1-2 business days.",
     },
     fr: {
+      ready= "Êtes-vous prêts ? Mettons nous au travail !",
         contactus: "Contactez Nous",
         startnow: "Commencer Maintenant !",
       title: "MediaTAG: Agence de Copywriting ",
@@ -123,6 +125,7 @@ var content = {
 
 // Function to update the content based on the user's language.
 function updateContent(language) {
+  document.getElementById("ready").textContent = content[language].ready;
   document.getElementById("mission").textContent = content[language].mission;
     document.getElementById("contactus").textContent = content[language].contactus;
     document.getElementById("startnow").textContent = content[language].startnow;
